@@ -1,5 +1,6 @@
 # Squirrel_Tracker
 * Final Project for Tools for Analytics (IEOR 4501)
+* Project Group: 37
 * Team Members: Garvit Khurana(GK2578) & Mayank Sehgal(MS6146)
 
 ## Project Description
@@ -9,5 +10,8 @@ Our source data is from [2018 Central Park Squirrel Census](https://data.cityofn
 ## Features:
 1. Adding a new squirrel sighting.
 2. Modifying current sightings.
-3. Common statistics about the squirrel sightings
-4. A map that plots the first 100 squirrel sightings on the OpenStreetMap.
+3. A map that plots 100 squirrel sightings on the OpenStreetMap.
+4. Common statistics about the squirrel sightings
+
+## Access the app at:
+
