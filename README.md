@@ -4,4 +4,10 @@
 
 ## Project Description
 Squirrel Tracker is a web application built for Joffrey Hosencratz in Django Framework to track all known squirrels in Central Park in Manhattan, NYC, NY.
-Our source data is from [2018 Central Park Squirrel Census](https://data.cityofnewyork.us/api/views/vfnx-vebw/rows.csv). Users can add, update, and view squirrel data on the web application.
+Our source data is from [2018 Central Park Squirrel Census](https://data.cityofnewyork.us/api/views/vfnx-vebw/rows.csv).
+
+## Features:
+1. Adding a new squirrel sighting.
+2. Modifying current sightings.
+3. Common statistics about the squirrel sightings
+4. A map that plots the first 100 squirrel sightings on the OpenStreetMap.
