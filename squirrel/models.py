@@ -1,19 +1,17 @@
 from django.db import models
-
-# Create your models here.
 from django.utils.translation import gettext as _
 
 class Sighting(models.Model):
     LONGITUDE = models.FloatField(
             help_text=_('Longitude of the sight'),)
-
+    
     LATITUDE = models.FloatField(
             help_text=_('Latitude of the sight'),)
-
+    
     SQUIRREL_ID= models.CharField(
          max_length=100,
          help_text=_('Unique Sighting ID of the squirrel'),
-         primary_key= True,a
+         primary_key= True,
          default='123ABC',
          unique=True
          )
@@ -36,7 +34,7 @@ class Sighting(models.Model):
 
     AGE = models.CharField(
             max_length=50,
-            choices = age_choice,
+            choices = age_choice, 
             help_text=_('Age Category of the Squirrel'),
             blank = True,
             )
