@@ -25,9 +25,13 @@ class Sighting(models.Model):
             help_text = _('Whether sighting happens in the morning or late afternoon'),
             blank = True
             )
+
+
     DATE = models.DateField(
-            help_text = _('Date of the sighting')
-            )
+            help_text = _('The format is in yyyy-mm-dd'),
+            null = True,
+            blank=True)
+
     ADULT='Adult'
     JUVENILE = 'Juvenile'
     age_choice = ((ADULT,'Adult'), (JUVENILE,'Juvenile'))

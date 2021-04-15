@@ -17,10 +17,11 @@ def add_sighting(request):
             return redirect(f'/sightings')
     else:
         form = SightingForm()
-        context ={
-                'form':form,
-                }
-    return render(request,'squirrel/add.html',context)
+
+    context ={
+            'form':form,
+            }
+    return render(request,'squirrel/update.html',context)
 
 
 def edit_sighting(request,SQUIRREL_ID):
@@ -32,9 +33,9 @@ def edit_sighting(request,SQUIRREL_ID):
             return redirect(f'/sightings')
     else:
         form = SightingForm(instance=squirrel)
-        context ={
+    context ={
             'form':form,
-                }
+            }
     return render(request, 'squirrel/update.html', context)
 
 def map(request):
