@@ -14,3 +14,8 @@ Our source data is from [2018 Central Park Squirrel Census](https://data.cityofn
 4. Common statistics about the squirrel sightings
 
 ## Access the app at:
+1. Clone the repo. `$ git clone https://github.com/garvitkhurana/Squirrel_Tracker.git`
+2. Set up a environemnt using requirements.txt.
+3. Goto the application. `$ cd squirrel_tracker/`
+4. Run the application. `$ sudo python manage.py runserver 0.0.0.0:80`
+5. Start sighting squirrels in Central Park.
