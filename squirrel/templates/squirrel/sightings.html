@@ -4,15 +4,16 @@
 		  <title>List of Squirrel Sightings</title>
 		    <meta charset="utf-8">
 		      <meta name="viewport" content="width=device-width, initial-scale=1">
-		        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     			  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    			    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 
 		<div class="container">
 			<h1> List of Squirrel Sightings Related To Unique Ids </h1>
-			<h2><a href='/sightings/add'> add</a> </h2>
+			<img src="https://www.birdwatchersdigest.com/bwdsite/wp-content/uploads/2015/01/Michelle-Birding.jpg" class="img-fluid" alt="Responsive image" width="500" height="600">
+			<h2><a href='/sightings/add'> ADD A SIGHTING</a> </h2>
 			<ul>
 				{% for squirrel in sighting %}
 				<li> <a href='/sightings/{{squirrel.SQUIRREL_ID}}/'> {{squirrel.SQUIRREL_ID}} </a> </li>
