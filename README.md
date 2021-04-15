@@ -1,3 +1,5 @@
+<img width="589" alt="App" src="https://user-images.githubusercontent.com/34378649/114943168-91a4dc80-9e13-11eb-8436-16096f8f5ac9.png">
+
 # Squirrel Tracker
 * Final Project for Tools for Analytics (IEOR 4501)
 * Project Group: 37
