@@ -20,7 +20,7 @@ class Command(BaseCommand):
                 d['Age'] = s.AGE
                 d['Primary Fur Color'] = s.FUR_COLOR
                 d['Location'] = s.LOCATION
-                d['Specific Location'] = s.SPECFIC_LOCATION
+                d['Specific Location'] = s.SPECIFIC_LOCATION
                 d['Running'] = s.RUNNING
                 d['Chasing'] = s.CHASING
                 d['Climbing'] = s.CLIMBING
