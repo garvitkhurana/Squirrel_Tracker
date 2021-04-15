@@ -12,7 +12,6 @@ def homepage(request):
 def add_sighting(request):
     if request.method == "POST":
         form= SightingForm(request.POST)
-        return render(request, 'squirrel/homepage.html')
         if form.is_valid():
             form.save()
             return redirect(f'/sightings')
@@ -21,7 +20,7 @@ def add_sighting(request):
         context ={
                 'form':form,
                 }
-    return render(request,'squirrel/update.html',context)
+    return render(request,'squirrel/add.html',context)
 
 
 def edit_sighting(request,SQUIRREL_ID):
