@@ -1,1 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		  <title>List of Squirrel Sightings</title>
+		    <meta charset="utf-8">
+		      <meta name="viewport" content="width=device-width, initial-scale=1">
+		        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    			  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    			    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<div class="container">
+			<h1> List of Squirrel Sightings Related To Unique Ids </h1>
+			<h2><a href='/sightings/add'> add</a> </h2>
+			<ul>
+				{% for squirrel in sighting %}
+				<li> <a href='/sightings/{{squirrel.SQUIRREL_ID}}/'> {{squirrel.SQUIRREL_ID}} </a> </li>
+				{{squirrel.DATE}}
+				{% endfor %}
+			</ul>
+		</div>
+
+	</body>
+</html>
