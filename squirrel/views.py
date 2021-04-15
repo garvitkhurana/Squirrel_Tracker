@@ -76,8 +76,3 @@ def get_statistics(request):
 	'B':B,
 	}
     return render(request, 'squirrel/statistics.html', context)
-
-def sighting(request):
-    sightings = Sighting.objects.all()
-    context = {'sighting': sightings}
-    return render(request, 'squirrel/sightings.html',context)
